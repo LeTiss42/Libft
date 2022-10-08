@@ -6,11 +6,11 @@
 /*   By: mravera <mravera@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 11:54:29 by mathis            #+#    #+#             */
-/*   Updated: 2022/10/07 22:26:15 by mravera          ###   ########.fr       */
+/*   Updated: 2022/10/08 14:01:39 by mravera          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../libft.h"
 
 void	printf_putnbr_base(char *res, int nbr, char *base)
 {

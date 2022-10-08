@@ -6,11 +6,11 @@
 /*   By: mravera <mravera@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 13:05:47 by mathis            #+#    #+#             */
-/*   Updated: 2022/10/07 22:23:55 by mravera          ###   ########.fr       */
+/*   Updated: 2022/10/08 14:00:48 by mravera          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../libft.h"
 
 int	ft_printf(const char *obj, ...)
 {

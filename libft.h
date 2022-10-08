@@ -6,7 +6,7 @@
 /*   By: mravera <mravera@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/10 15:14:28 by mravera           #+#    #+#             */
-/*   Updated: 2022/10/08 03:00:26 by mravera          ###   ########.fr       */
+/*   Updated: 2022/10/08 13:57:27 by mravera          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,10 +64,10 @@ void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 
 t_list			*ft_lstnew(void *content);
-void			ft_lstadd_front(t_list **alst, t_list *new);
+void			ft_lstadd_front(t_list **alst, t_list *newt);
 int				ft_lstsize(t_list *lst);
 t_list			*ft_lstlast(t_list *lst);
-void			ft_lstadd_back(t_list **alst, t_list *new);
+void			ft_lstadd_back(t_list **alst, t_list *newt);
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
@@ -94,9 +94,9 @@ int				printf_is_majx(va_list lst);
 int				printf_is_pcent(void);
 
 //gnl.h
-size_t			ft_strlen(char *str);
-char			*ft_strchr(char *s, int x);
-char			*ft_strjoin(char *s1, char *s2);
+size_t			gnl_strlen(char *str);
+char			*gnl_strchr(char *s, int x);
+char			*gnl_strjoin(char *s1, char *s2);
 char			*get_next_line(int fd);
 char			*ft_get_line(char *frigo);
 char			*ft_save(char *frigo);

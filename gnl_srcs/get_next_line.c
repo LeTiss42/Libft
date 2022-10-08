@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   oui.c                                              :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mravera <mravera@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mravera <mravera@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 13:53:59 by mathis            #+#    #+#             */
-/*   Updated: 2022/05/27 19:49:59 by mravera          ###   ########.fr       */
+/*   Updated: 2022/10/08 13:58:48 by mravera          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../libft.h"
 
 char	*ft_get_line(char *frigo)
 {
@@ -55,7 +55,7 @@ char	*ft_save(char *frigo)
 		free(frigo);
 		return (NULL);
 	}
-	res = (char *)malloc(sizeof(char) * (ft_strlen(frigo) - i + 1));
+	res = (char *)malloc(sizeof(char) * (gnl_strlen(frigo) - i + 1));
 	if (!res)
 		return (NULL);
 	i++;
@@ -75,7 +75,7 @@ char	*ft_read_and_save(int fd, char *frigo)
 	if (!buff)
 		return (NULL);
 	read_bytes = 1;
-	while (!ft_strchr(frigo, '\n') && read_bytes != 0)
+	while (!gnl_strchr(frigo, '\n') && read_bytes != 0)
 	{
 		read_bytes = read(fd, buff, BUFFER_SIZE);
 		if (read_bytes == -1)
@@ -84,7 +84,7 @@ char	*ft_read_and_save(int fd, char *frigo)
 			return (NULL);
 		}
 		buff[read_bytes] = '\0';
-		frigo = ft_strjoin(frigo, buff);
+		frigo = gnl_strjoin(frigo, buff);
 	}
 	free(buff);
 	return (frigo);

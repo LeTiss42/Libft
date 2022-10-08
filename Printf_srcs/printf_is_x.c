@@ -6,11 +6,11 @@
 /*   By: mravera <mravera@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 11:37:24 by mathis            #+#    #+#             */
-/*   Updated: 2022/10/07 22:11:35 by mravera          ###   ########.fr       */
+/*   Updated: 2022/10/08 14:01:31 by mravera          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../libft.h"
 
 int	printf_is_x(va_list lst)
 {

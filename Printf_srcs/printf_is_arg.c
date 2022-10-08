@@ -6,11 +6,11 @@
 /*   By: mravera <mravera@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 22:00:25 by mravera           #+#    #+#             */
-/*   Updated: 2022/10/07 22:01:40 by mravera          ###   ########.fr       */
+/*   Updated: 2022/10/08 14:00:43 by mravera          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../libft.h"
 
 int	printf_is_arg(const char *obj, va_list lst)
 {

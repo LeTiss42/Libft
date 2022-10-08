@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   oui.h                                              :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mravera <mravera@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mravera <mravera@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 18:40:14 by mathis            #+#    #+#             */
-/*   Updated: 2022/05/27 19:50:32 by mravera          ###   ########.fr       */
+/*   Updated: 2022/10/08 13:59:20 by mravera          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 #  define BUFFER_SIZE 42
 # endif
 
-size_t			ft_strlen(char *str);
-char			*ft_strchr(char *s, int x);
-char			*ft_strjoin(char *s1, char *s2);
+size_t			gnl_strlen(char *str);
+char			*gnl_strchr(char *s, int x);
+char			*gnl_strjoin(char *s1, char *s2);
 char			*get_next_line(int fd);
 char			*ft_get_line(char *frigo);
 char			*ft_save(char *frigo);
